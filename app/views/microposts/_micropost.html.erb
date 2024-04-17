@@ -1,0 +1,42 @@
+<div id="<%= dom_id micropost %>">
+  <style type="text/css">
+   h1 { 
+    color : gray;
+    font-size: 100px;
+    margin-left: 40px;
+    background-color:#DDDDDD;
+   } 
+   
+   div {
+     padding:  10px;
+     margin: 10px;
+     background-color: #DDFFFF;
+     font-size: 30px;
+   }
+   
+   p a {
+       text-align:  center;                /* 文字中央揃え */
+    color:  #fff;                       /* 文字色指定 */
+    background-color: #00BCD4;          /* 背景色指定 */
+    display:  block;                    /* ブロック要素にする */
+    width:  300px;                      /* 幅指定 */
+    padding:  15px;                     /* 余白指定 */
+    font-size:  20px;                   /* 文字サイズ指定 */
+    text-decoration:  none;             /* デフォルトCSS打ち消し */
+    border-radius:  5px;                /* 角丸指定 */
+    box-shadow: 0 4px 0 0px #028d9e;    /* 影指定 */
+    margin-top : 20px;
+    margin-left: 20px;
+   }
+   </style>
+  <p>
+    <strong>Content:</strong>
+    <%= micropost.content %>
+  </p>
+
+  <p>
+    <strong>User:</strong>
+    <%= micropost.user_id %>
+  </p>
+
+</div>

@@ -1,0 +1,53 @@
+<style type="text/css">
+   h1 { 
+    color : #555555;
+    font-size: 50px;
+    margin-left: 40px;
+   } 
+   
+   div {
+     padding:  10px;
+     margin: 10px;
+     background-color: #DDFFFF;
+     font-size: 30px;
+   }
+   
+   p a {
+       text-align:  center;                /* 文字中央揃え */
+    color:  #fff;                       /* 文字色指定 */
+    background-color: #00BCD4;          /* 背景色指定 */
+    display:  block;                    /* ブロック要素にする */
+    width:  300px;                      /* 幅指定 */
+    padding:  15px;                     /* 余白指定 */
+    font-size:  20px;                   /* 文字サイズ指定 */
+    text-decoration:  none;             /* デフォルトCSS打ち消し */
+    border-radius:  5px;                /* 角丸指定 */
+    box-shadow: 0 4px 0 0px #028d9e;    /* 影指定 */
+    margin-top : 20px;
+    margin-left: 20px;
+   }
+   
+   
+   textarea {
+  resize: vertical;
+  width: 300px; /* 入力欄の横幅を指定（例として300pxに設定） */
+  height: 100px; /* 入力欄の最初の高さを指定（例として100pxに設定） */
+  margin: 40px 3%;
+
+}
+
+input {
+	position: relative;
+	width: 27.33%;
+	margin: 40px 3%;
+}
+</style>
+<h1>新しいコメントを追加</h1>
+
+<p><%= render "form", micropost: @micropost %></p>
+
+<br>
+
+<div>
+  <p><%= link_to "一覧画面に戻る", microposts_path %></p>
+</div>
